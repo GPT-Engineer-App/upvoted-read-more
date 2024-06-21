@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Text, VStack, Input, Box, Link, Switch, useColorMode } from "@chakra-ui/react";
+import { Box, Container, Text, VStack, Input, Link, Switch, useColorMode } from "@chakra-ui/react";
 import axios from "axios";
 
 const Index = () => {
@@ -28,7 +28,7 @@ const Index = () => {
   return (
     <Container centerContent maxW="container.md" py={8}>
       <VStack spacing={4} width="100%">
-        <Box width="100%" display="flex" justifyContent="space-between" alignItems="center">
+        <Box width="100%" display="flex" justifyContent="space-between" alignItems="center" bg="green.500" p={4} borderRadius="md">
           <Text fontSize="2xl">Hacker News Top Stories</Text>
           <Switch isChecked={colorMode === "dark"} onChange={toggleColorMode} />
         </Box>
