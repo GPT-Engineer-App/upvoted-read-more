@@ -28,7 +28,7 @@ const Index = () => {
   return (
     <Container centerContent maxW="container.md" py={8}>
       <VStack spacing={4} width="100%">
-        <Box width="100%" display="flex" justifyContent="space-between" alignItems="center" bg="green.500" p={4} borderRadius="md">
+        <Box width="100%" display="flex" justifyContent="space-between" alignItems="center" bg="purple.500" p={4} borderRadius="md">
           <Text fontSize="2xl">Hacker News Top Stories</Text>
           <Switch isChecked={colorMode === "dark"} onChange={toggleColorMode} />
         </Box>
